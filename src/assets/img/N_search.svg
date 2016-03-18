@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+<rect x="8" y="9.8" fill="#FFB03B" width="111.8" height="108.4"/>
+<g>
+	<path id="arrow" fill="#FFFFFF" d="M47.1,79.2l22.8-9.3l9.3-23l-23,9.1L47.1,79.2z M63.1,58.4c2.5,0,4.7,2,4.7,4.7
+		c0,2.5-2,4.7-4.7,4.7c-2.5,0-4.7-2-4.7-4.7C58.4,60.5,60.5,58.4,63.1,58.4z"/>
+
+		<animateTransform  type="rotate" fill="remove" restart="always" begin="0" from="0 63 63" dur="5s" to="360 63 63" accumulate="none" additive="replace" repeatCount="indefinite" attributeName="transform" calcMode="linear" attributeType="xml">
+		</animateTransform>
+</g>
+<path id="round" fill="#FFFFFF" d="M63,25.9c-20.5,0-37.1,16.6-37.1,37.1s16.6,37.1,37.1,37.1s37.1-16.6,37.1-37.1
+	S83.5,25.9,63,25.9z M63.1,92.8c-16.4,0-29.7-13.3-29.7-29.7s13.3-29.7,29.7-29.7s29.7,13.3,29.7,29.7S79.5,92.8,63.1,92.8z"/>
+</svg>

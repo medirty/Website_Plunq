@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" width="200px" height="200px">
+
+<circle id="Circle" fill="#FFB03B" cx="100" cy="100" r="88"/>
+
+    <g>
+
+        <path id="arrow" fill="#FFFFFF" d="M77.5,122.9l32.3-13.2L123,77.1L90.4,90L77.5,122.9z M100.1,93.5c3.6,0,6.6,2.9,6.6,6.6
+	c0,3.6-2.9,6.6-6.6,6.6c-3.6,0-6.6-2.9-6.6-6.6C93.5,96.5,96.5,93.5,100.1,93.5z"/>
+
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" begin="0" dur="5s" repeatCount="indefinite" />
+
+    </g>
+
+<path id="round" fill="#FFFFFF" d="M100,47.5C71,47.5,47.5,71,47.5,100c0,29,23.5,52.5,52.5,52.5s52.5-23.5,52.5-52.5
+	C152.5,71,129,47.5,100,47.5z M100.1,142.1c-23.2,0-42-18.8-42-42s18.8-42,42-42c23.2,0,42,18.8,42,42S123.3,142.1,100.1,142.1z"/>
+
+</svg>

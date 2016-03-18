@@ -1,0 +1,526 @@
+@import 'color';
+body {
+    box-sizing: border-box;
+}
+
+.red {
+    color: $red;
+}
+
+.orange {
+    color: $orange;
+}
+
+.green {
+    color: $green;
+}
+
+#smallnav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: $white;
+    //    box-shadow: 10px 0 25px #d3d3d3;
+}
+
+#nav {
+    //transition: all ease-in-out 0.1s;
+    position: fixed;
+    background-color: none;
+    z-index: 2;
+    width: 100%;
+    transition: all ease 0.5s;
+    //    box-shadow: 10px 0 25px #d3d3d3;
+    padding-left: 50px;
+    padding-right: 50px;
+    a {
+        transition: all ease 0.8s;
+        color: $white;
+    }
+    #logo {
+        transition: all ease 0.8s;
+        img {
+            transition: all ease 0.8s;
+        }
+    }
+}
+
+header {
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+    @include breakpoint (medium only) {
+        height: 400px;
+    }
+
+    @include breakpoint (small only) {
+        height: auto;
+        overflow: visible;
+    }
+
+    #video {
+        //margin-top: 50px;
+        height: auto;
+        width: 100% !important;
+    }
+
+    img {
+        margin-top: 50px;
+    }
+}
+.box {
+    background-color: white;
+    border: solid 1px #dedede;
+    box-shadow: 0px 10px 25px #eaeaea;
+}
+.searchbox {
+    margin-top: 20px;
+    position: relative;
+    h1 {
+        margin-top: -80px;
+    }
+
+    img {
+        position: relative;
+        top: -100px;
+    }
+
+    #search_explore {
+        .button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            width: 80%;
+            font-size: 1.4rem;
+            background-color: $red;
+            transition: all ease-in-out 0.5s;
+            @include breakpoint (medium only) {
+                width: 50%
+            }
+            &:hover {
+                background-color: darken($red, 5%);
+                border-radius: 25px;
+            }
+        }
+    }
+
+    #search_nearby {
+        .button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            width: 80%;
+            font-size: 1.4rem;
+            background-color: $orange;
+            transition: all ease-in-out 0.5s;
+            @include breakpoint (medium only) {
+                width: 50%
+            }
+            &:hover {
+                background-color: darken($orange, 5%);
+                border-radius: 25px;
+            }
+        }
+    }
+
+    #search_shared {
+        .button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            width: 80%;
+            font-size: 1.4rem;
+            background-color: $green;
+            transition: all ease-in-out 0.5s;
+            @include breakpoint (medium only) {
+                width: 25%
+            }
+            &:hover {
+                background-color: darken($green, 5%);
+                border-radius: 25px;
+            }
+        }
+    }
+}
+#popular_title {
+    margin-top: 100px;
+    h1 {
+        color: $orange;
+    }
+
+    @include breakpoint (small only) {
+        margin: 50px 0 0 0;
+    }
+}
+.popular {
+    h1 {
+        color: $orange;
+    }
+
+    h3 {
+        color: $orange;
+    }
+
+    margin-bottom: 100px;
+    @include breakpoint (medium only) {
+        margin-bottom: 65px;
+    }
+
+    @include breakpoint (small only) {
+        margin-bottom: 50px;
+    }
+}
+.start_explore {
+    #explore_content {
+        position: relative;
+        h1 {
+            color: $red;
+        }
+        .button {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            width: 40%;
+            font-size: 1.4rem;
+            background-color: $red;
+            @include breakpoint (medium only) {
+                width: 20%
+            }
+            &:hover {
+                background-color: darken($red, 5%);
+            }
+        }
+        #explore_map {
+            position: absolute;
+            left: -150px;
+        }
+    }
+}
+.nearby {
+    padding: 100px 0 100px 0;
+    background-color: $orange;
+    .button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 5px;
+        width: 30%;
+        font-size: 1.4rem;
+        color: $orange;
+        background-color: white;
+        @include breakpoint (medium only) {
+            width: 20%
+        }
+        &:hover {
+            //            background-color: darken(white, 15%);
+            background-color: $orange;
+            border: solid 2px white;
+            a {
+                color: white;
+            }
+        }
+    }
+
+    #brief_nearby {
+        padding-left: 50px;
+    }
+
+    h2,
+    p {
+        color: white;
+    }
+
+    @include breakpoint (medium only) {
+        margin-top: 50px;
+    }
+
+    @include breakpoint (small only) {
+        margin-top: 25px;
+    }
+}
+.quote {
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+.explore_search {
+    padding: 300px 0 300px 0;
+    background-image: url(../../assets/img/exploreBG.jpg);
+    /*background-attachment: fixed;*/
+
+    background-position: top;
+    @include breakpoint (small only) {
+        position: relative;
+        top: 80px;
+        margin-bottom: 130px;
+        padding: 100px 0 100px 0;
+    }
+
+    #explore_search_title {
+        @include breakpoint (small only) {
+            padding: 20px 10px 20px 10px;
+        }
+    }
+
+    #search_icon {
+        padding: 0;
+        margin: 0;
+        background-color: $red;
+    }
+
+    h1 {
+        color: $white;
+    }
+}
+.explore_nearby {
+    padding: 300px 0 300px 0;
+    background-image: url(../../assets/img/TripBG.jpg);
+    background-position: left;
+    //    background-attachment: fixed;
+    @include breakpoint (small only) {
+        position: relative;
+        top: 80px;
+        margin-bottom: 100px;
+        padding: 100px 0 100px 0;
+    }
+
+    #explore_nearby_title {
+        @include breakpoint (small only) {
+            padding: 20px 10px 20px 10px;
+        }
+    }
+
+    #nearby_icon {
+        padding: 0;
+        margin: 0;
+        background-color: $orange;
+    }
+
+    h1 {
+        color: $white;
+    }
+}
+.explore_shared {
+    padding: 300px 0 300px 0;
+    background-image: url(../../assets/img/sharedBG.jpg);
+    background-position: bottom;
+    //    background-attachment: fixed;
+    @include breakpoint (small only) {
+        position: relative;
+        top: 80px;
+        margin-bottom: 130px;
+        padding: 100px 0 100px 0;
+    }
+
+    #explore_shared_title {
+        @include breakpoint (small only) {
+            padding: 20px 10px 20px 10px;
+        }
+    }
+
+    #shared_icon {
+        padding: 0;
+        margin: 0;
+        background-color: $green;
+    }
+
+    h1 {
+        color: $white;
+    }
+}
+.exploreimages {
+    //    padding: 0 50px 0 50px;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @include breakpoint (medium only) {
+        padding: 0;
+    }
+
+    @include breakpoint (small only) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    h3,
+    h5 {
+        color: $red;
+    }
+
+    .column {
+        position: relative;
+        margin-bottom: 20px;
+        .verified {
+            position: absolute;
+            top: -50px;
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .callout {
+        background-color: $red;
+    }
+
+    #contributor {
+        h3,
+        h2,
+        h5,
+        p,
+        {
+            color: white;
+        }
+    }
+}
+.nearbyimages {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    @include breakpoint (small only) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        color: $orange;
+    }
+}
+.sharedimages {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    @include breakpoint (small only) {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    h3,
+    h4 {
+        color: $green;
+    }
+
+    .thumbnail {
+        @include breakpoint (small only) {
+            width: 100%;
+        }
+    }
+}
+.detail {
+    position: relative;
+    #detailimg02 {
+        margin-left: -150px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #detailimg02small {
+        @include breakpoint (medium only) {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+
+    #detail_map {
+        margin-left: -150px;
+        margin-bottom: 50px;
+        @include breakpoint (medium only) {
+            margin-left: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    #detailimg {
+        background-image: url(../../assets/img/detailimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #detailcontent {
+        #detailnama {
+            @include breakpoint (medium up) {
+                padding: 25px;
+                padding-left: 10px;
+            }
+            //@include breakpoint (medium down) {
+            //    padding-left: 0;
+            //    padding-top:0;
+            //}
+        }
+    }
+
+    #detailback {
+        i,
+        a {
+            font-size: 1.4rem;
+            @include breakpoint (medium only) {
+                font-size: 1.2rem;
+            }
+            @include breakpoint (small only) {
+                margin-bottom: 20px;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.user {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    @include breakpoint (small only) {
+        margin-top: 0;
+    }
+
+    .callout {
+        background-color: $green;
+        border: none;
+        border-radius: 0;
+        h4,
+        p {
+            color: white;
+        }
+    }
+
+    #user_photo {
+        i,
+        a {
+            font-size: 1.4rem;
+        }
+    }
+
+    #user_detail {
+        @include breakpoint (small only) {
+            margin-top: 25px;
+            //            margin-bottom: -250px;
+        }
+    }
+}
+.profile {
+    background-image: url(../../assets/img/travel-background-seamless.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    .venue {
+        @include breakpoint (small only) {
+            //            margin-top: -50px;
+        }
+    }
+}
+footer {
+    background-color: $green;
+    padding: 50px 0 50px 0;
+    h4,
+    h5,
+    p,
+    a {
+        color: white;
+    }
+
+    #footernav {
+        @include breakpoint (small only) {
+            margin-bottom: 20px;
+        }
+    }
+}
+.footline {
+    background-color: $yellow;
+    padding: 20px 0 5px 0;
+    p {
+        color: $red;
+    }
+}

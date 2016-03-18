@@ -1,0 +1,109 @@
+{{> nav}}
+
+
+<header>
+    <img src="{{root}}assets/img/headerBG.jpg" alt="" width="100%" class="hide-for-medium">
+<!--    <iframe id="video" width="100%" height="600" src="https://www.youtube.com/embed/BNNN0KoRcoU?autoplay=1&loop=1&rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen loop class="show-for-medium"></iframe>-->
+    <video id="video" width="100%" height="auto" autoplay loop muted class="show-for-medium">
+
+        <source src="{{root}}/assets/video/vidBG.mp4">
+
+    </video>
+
+</header>
+
+<div class="row show-for-medium searchbox" data-equalizer>
+    <div class="medium-6 large-4 column text-center box" id="search_explore" data-equalizer-watch>
+        <img src="{{root}}assets/img/E_cat.svg" alt="" class="text-center">
+        <h1 class="red"><strong>EXPLORE</strong></h1>
+        <h4>Jelajahi tempat-tempat yang belum pernah kamu kunjungi</h4>
+        <br>
+        <br>
+        <a href="explore.html" class="button">Search Now</a>
+    </div>
+    <div class="medium-6 large-4 column text-center box" id="search_nearby" data-equalizer-watch>
+        <img src="{{root}}assets/img/N_cat.svg" alt="" class="text-center">
+        <h1 class="orange"><strong>TRIPS</strong></h1>
+        <h4>Temukan tempat-tempat yang dekat dengan kamu sekarang</h4>
+        <br>
+        <br>
+        <a href="nearby.html" class="button">Search Now</a>
+    </div>
+    <div class="medium-12 large-4 column text-center box" id="search_shared" data-equalizer-watch>
+        <img src="{{root}}assets/img/S_cat.svg" alt="" class="text-center">
+        <h1 class="green"><strong>SHARED PLACE</strong></h1>
+        <h4>Cari tempat untuk menginap, makan, atau nongkrong</h4>
+        <br>
+        <br>
+        <a href="sharedplace.html" class="button">Search Now</a>
+    </div>
+</div>
+
+
+<div class="row" id="popular_title">
+    <div class="medium-12 column wow slideInLeft">
+        <h1><strong>POPULAR PLACES</strong></h1>
+    </div>
+</div>
+
+<div class="row small-up-2 medium-up-2 large-up-4 popular">
+    <div class="column wow slideInUp">
+        <a href="detailplace.html"><img src="{{root}}assets/img/detailimg02.jpg" alt="" class="thumbnail"></a>
+        <a href="detailplace.html"><h3>NAMA TEMPAT</h3></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis assumenda eligendi alias voluptate dicta delectus cupiditate aperiam officiis facilis magni.</p>
+    </div>
+    <div class="column wow slideInUp">
+        <a href="detailplace.html"><img src="{{root}}assets/img/detailimg02.jpg" alt="" class="thumbnail"></a>
+        <a href="detailplace.html"><h3>NAMA TEMPAT</h3></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis assumenda eligendi alias voluptate dicta delectus cupiditate aperiam officiis facilis magni.</p>
+    </div>
+    <div class="column wow slideInUp">
+        <a href="detailplace.html"><img src="{{root}}assets/img/detailimg02.jpg" alt="" class="thumbnail"></a>
+        <a href="detailplace.html"><h3>NAMA TEMPAT</h3></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis assumenda eligendi alias voluptate dicta delectus cupiditate aperiam officiis facilis magni.</p>
+    </div>
+    <div class="column wow slideInUp">
+        <a href="detailplace.html"><img src="{{root}}assets/img/detailimg02.jpg" alt="" class="thumbnail"></a>
+        <a href="detailplace.html"><h3>NAMA TEMPAT</h3></a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis assumenda eligendi alias voluptate dicta delectus cupiditate aperiam officiis facilis magni.</p>
+    </div>
+</div>
+
+<div class="row start_explore">
+    <div class=" large-6 column show-for-large" id="explore_img">
+        <img src="{{root}}assets/img/startexplore.jpg" alt="">
+    </div>
+    <div class=" large-6 column" id="explore_content">
+        <h1><strong>START YOUR EXPLORATION</strong></h1>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptas quia, blanditiis aliquid esse aperiam vero magni, eos nisi soluta odit! Saepe nesciunt mollitia aliquid, magni libero vel earum numquam.</h5>
+        <br>
+        <a href="explore.html" class="button">Start now</a>
+        <br>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0038551043704!2d110.36123631457949!3d-7.789414679459568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58244b878f8b%3A0x5e9d700743b29deb!2sStasiun+Yogyakarta!5e0!3m2!1sid!2s!4v1455696878773" width="600" height="400px" frameborder="0" style="border:0" allowfullscreen id="explore_map" class="show-for-large wow slideInRight"></iframe>
+    </div>
+</div>
+
+
+<div class="row expanded nearby">
+    <div class="large-6 column" id="brief_nearby">
+        <h2><strong>Temukan perjalanan-perjalanan yang dekat dengan kamu sekarang</strong></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores voluptates voluptatibus doloribus doloremque, amet velit neque quam minus odio minima quaerat molestiae, laboriosam nemo esse, tempora id quibusdam consectetur atque.</p>
+        <br>
+        <a href="nearby.html" class="button">Start Now</a>
+    </div>
+    <div class="large-4 column show-for-large">
+        <img src="{{root}}assets/img/browse%20icon.png" alt="" class="show-for-medium wow slideInUp">
+    </div>
+</div>
+
+
+<div class="row quote">
+    <div class="small-12 column text-center">
+        <h1>"Do not follow where the path may lead. Go instead where there is no path and leave a trail"</h1>
+        <h4><em>- Ralph Waldon Emerson -</em></h4>
+    </div>
+</div>
+
+
+{{> footer}} {{> footline}}
